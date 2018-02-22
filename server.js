@@ -24,7 +24,7 @@ var articles = {
         date: 'March 5, 2018',
         content: `<p>This is content for my third article.</p>`
     }
-}
+};
 
 function createTemplate (data){
     var title = data.title;

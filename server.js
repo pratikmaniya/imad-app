@@ -81,6 +81,42 @@ app.get('/', function (req, res) {
 });
 
 
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/hometree1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','hometree1.css'));
+});
+
+app.get('/ui/contactus.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','contactus.css'));
+});
+
+app.get('/ui/signin.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','signin.css'));
+});
+
+app.get('/ui/newuser.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','newuser.css'));
+});
+
+app.get('/ui/phoneverification.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','phoneverification.css'));
+});
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+app.get('/ui/jumbotron.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree', 'jumbotron.jpg'));
+});
+
+app.get('/ui/plant.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree', 'plant.jpg'));
+});
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers

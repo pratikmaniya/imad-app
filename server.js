@@ -62,7 +62,7 @@ app.get('/:articleName', function(req,res) {
 });
 
 function createp (data){
-    res.sendFile(path.join(__dirname, 'ui', 'hometree', data));
+    res.sendFile(path.join(__dirname, 'ui', 'hometree', 'hometree1.html'));
 }
 
 app.get('/ui/:fileName', function(req,res) {

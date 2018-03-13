@@ -56,6 +56,15 @@ function createTemplate (data){
     return htmlTemplate;
 }
 
+function create(data){
+    console.write(data);
+}
+
+app.get('/:articleName', function(req,res) {
+    var url = req.originalUrl;
+  res.send(create(url));
+});
+
 app.get('/:articleName', function(req,res) {
     var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));

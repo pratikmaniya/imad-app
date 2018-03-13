@@ -183,6 +183,7 @@ footer ul{
 	color: #3B5998;
 	background-color: white;
 	text-decoration: none;
+	transition: 0.8s;
 }
 
 .fa-twitter {
@@ -194,6 +195,7 @@ footer ul{
 	color: #55ACEE;
 	background-color: white;
 	text-decoration: none;
+	transition: 0.8s;
 }
 
 .fa-linkedin {
@@ -205,6 +207,7 @@ footer ul{
 	color: #007bb5;
 	background-color: white;
 	text-decoration: none;
+	transition: 0.8s;
 }
 
 .fa-instagram {
@@ -216,6 +219,7 @@ footer ul{
 	color: #ed486b;
 	background-color: white;
 	text-decoration: none;
+	transition: 0.8s;
 }
 
 @media (min-width:800px){

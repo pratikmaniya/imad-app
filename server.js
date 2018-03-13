@@ -62,7 +62,7 @@ app.get('/:articleName', function(req,res) {
 });
 
 function createp (file){
-    var s = file;
+    var s = 'file';
     return s;
 }
 

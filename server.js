@@ -61,8 +61,8 @@ app.get('/:articleName', function(req,res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-function createp (data){
-    return data+'.html';
+function createp (file){
+    return file+'.html';
 }
 
 app.get('/ui/:fileName', function(req,res) {

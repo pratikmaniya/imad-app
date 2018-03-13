@@ -64,6 +64,10 @@ app.get('/ui/hometree1.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hometree','hometree1.html'));
 });
 
+app.get('/ui/contactus.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','contactus.html'));
+});
+
 app.get('/:articleName', function(req,res) {
     var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));

@@ -56,9 +56,9 @@ function createTemplate (data){
     return htmlTemplate;
 }
 
-app.get('/:articleName', function(req,res) {
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
+app.get('/:articleadd', function(req,res) {
+    var articleName = req.params.articleadd;
+  res.send(createTemplate(articles[articleadd]));
 });
 
 app.get('/', function (req, res) {

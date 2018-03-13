@@ -61,12 +61,12 @@ function create(data){
     return s;
 }
 
-app.get('/ui/hometree/*', function(req,res) {
+app.get('/ui/hometree/*.html', function(req,res) {
     var url = req.originalUrl;
   res.sendFile(path.join(__dirname, create(url)));
 });
 
-app.get('/ui/*', function(req,res) {
+app.get('/ui/hometree/style/*.css', function(req,res) {
     var url = req.originalUrl;
   res.sendFile(path.join(__dirname, create(url)));
 });

@@ -62,7 +62,7 @@ app.get('/:articleName', function(req,res) {
 });
 
 function createFile(data){
-        return path.join(__dirname,'ui','hometree','data');
+        return path.join(__dirname,'ui','hometree','data.html');
 }
 
 

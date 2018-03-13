@@ -65,7 +65,6 @@ function createFile(data){
         return path.join(__dirname,'ui','hometree','data.html');
 }
 
-
 app.get('/ui/:fileName', function(req,res) {
     var fileName = req.params.filename;
     res.sendFile(createFile(fileName));

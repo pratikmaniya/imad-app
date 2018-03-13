@@ -61,13 +61,13 @@ app.get('/:articleName', function(req,res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-function createFile (data){
-        return 'data';
+function createp (data){
+    res.sendFile(path.join(__dirname, 'ui', 'hometree', data));
 }
 
 app.get('/ui/:fileName', function(req,res) {
     var fileName = req.params.filename;
-    res.sendFile(path.join(__dirname, 'ui', 'hometree', createFile(fileName)));
+    createp(fileName);
 });
 
 app.get('/', function (req, res) {

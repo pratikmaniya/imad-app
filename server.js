@@ -61,7 +61,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ui/hometree1.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'hometree1.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','hometree1.html'));
 });
 
 app.get('/:articleName', function(req,res) {
@@ -74,7 +74,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/hometree1.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'hometree1.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','hometree1.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
@@ -82,11 +82,11 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/ui/jumbotron.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'jumbotron.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'hometree', 'jumbotron.jpg'));
 });
 
 app.get('/ui/plant.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'plant.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'hometree', 'plant.jpg'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers

@@ -60,7 +60,7 @@ function create(data){
     console.write(data);
 }
 
-app.get('/:articleName', function(req,res) {
+app.get('/one', function(req,res) {
     var url = req.originalUrl;
   res.send(create(url));
 });

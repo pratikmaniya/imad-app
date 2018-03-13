@@ -79,6 +79,7 @@ textarea{
 .fa-facebook:hover{
 	color: #3B5998;
 	background-color: white;
+	transition: 1s;
 }
 
 .fa-twitter {

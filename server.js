@@ -72,6 +72,10 @@ app.get('/ui/signin.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hometree','signin.html'));
 });
 
+app.get('/ui/phoneverification.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'phoneverification.html'));
+});
+
 app.get('/ui/newuser.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hometree','newuser.html'));
 });

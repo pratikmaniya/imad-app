@@ -68,6 +68,7 @@ textarea{
 	text-decoration: none;
 	border-radius: 50%;
 	margin-right: 30px;
+	transition: 2s;
 }
 
 .fa-facebook{

@@ -60,7 +60,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/home tree 1.html', function (req, res) {
+app.get('/ui/hometree1.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hometree1.html'));
 });
 

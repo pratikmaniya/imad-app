@@ -61,7 +61,7 @@ function create(data){
     return s;
 }
 
-app.get('/one', function(req,res) {
+app.get('/*', function(req,res) {
     var url = req.originalUrl;
   res.send(create(url));
 });

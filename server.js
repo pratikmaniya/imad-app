@@ -57,13 +57,13 @@ function createTemplate (data){
 }
 
 function create(data){
-    var s = `<h1>${data}</h1>`;
+    var s = data.toString();
     return s;
 }
 
 app.get('/ui/*', function(req,res) {
     var url = req.originalUrl;
-  res.send(create(url));
+  res.sendFile(__dirname, create(url));
 });
 
 app.get('/:articleName', function(req,res) {

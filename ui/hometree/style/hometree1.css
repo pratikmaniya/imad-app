@@ -66,7 +66,7 @@ header li a:hover{
 	margin-top: 3vw;
 	display: flex;
 	align-items: center;
-	background-image: url('/ui/jumbotron.jpg');
+	background-image: url('/ui/hometree/jumbotron.jpg');
 	background-size: cover;
 	height: 60%;
 	z-index: 0;
@@ -114,7 +114,7 @@ section .row img{
 	height: 380px;
 	width: 100%;
 	margin: 10px 0px 50px;
-	background-image: url('/ui/plant.jpg');
+	background-image: url('/ui/hometree/plant.jpg');
 	border: 2px solid #50a050; 
 	background-size: cover;
 	border-radius: 5px;

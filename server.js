@@ -66,7 +66,7 @@ app.get('/ui/hometree/*', function(req,res) {
   res.sendFile(path.join(__dirname, create(url)));
 });
 
-app.get('/ui/hometree/style*', function(req,res) {
+app.get('/ui/hometree/style/*', function(req,res) {
     var url = req.originalUrl;
   res.sendFile(path.join(__dirname, create(url)));
 });
@@ -80,7 +80,61 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/ui/hometree1.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','hometree1.html'));
+});
 
+app.get('/ui/contactus.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','contactus.html'));
+});
+
+app.get('/ui/signin.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','signin.html'));
+});
+
+app.get('/ui/phoneverification.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'phoneverification.html'));
+});
+
+app.get('/ui/newuser.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree','newuser.html'));
+});
+
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/hometree1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','hometree1.css'));
+});
+
+app.get('/ui/contactus.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','contactus.css'));
+});
+
+app.get('/ui/signin.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','signin.css'));
+});
+
+app.get('/ui/newuser.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','newuser.css'));
+});
+
+app.get('/ui/phoneverification.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','phoneverification.css'));
+});
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+app.get('/ui/jumbotron.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree', 'jumbotron.jpg'));
+});
+
+app.get('/ui/plant.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hometree', 'plant.jpg'));
+});
 
 
 

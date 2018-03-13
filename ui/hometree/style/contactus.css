@@ -68,19 +68,16 @@ textarea{
 	text-decoration: none;
 	border-radius: 50%;
 	margin-right: 30px;
-	transition: 2s;
 }
 
 .fa-facebook{
 	background-color: #3B5998;
 	color: white;
-	
 }
 
 .fa-facebook:hover{
 	color: #3B5998;
 	background-color: white;
-	transition: 1s;
 }
 
 .fa-twitter {

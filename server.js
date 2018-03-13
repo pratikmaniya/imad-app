@@ -82,7 +82,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/hometree1.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'hometree','hometree1.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'hometree' ,'style','hometree1.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {

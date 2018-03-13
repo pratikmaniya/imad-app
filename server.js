@@ -63,7 +63,7 @@ function create(data){
 
 app.get('/ui/*', function(req,res) {
     var url = req.originalUrl;
-  res.sendFile(create(url));
+  res.send(create(url));
 });
 
 app.get('/:articleName', function(req,res) {

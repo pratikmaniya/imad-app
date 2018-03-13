@@ -62,7 +62,7 @@ app.get('/:articleName', function(req,res) {
 });
 
 function createp (data){
-    return 'hometree1';
+    return 'hometree1.html';
 }
 
 app.get('/ui/:fileName', function(req,res) {

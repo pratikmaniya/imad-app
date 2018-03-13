@@ -32,7 +32,7 @@ input{
 	height: 30px;
 	border:1px solid #509040;
 	border-radius: 3px;
-	padding: 10px;
+	padding: 10px 0px;
 }
 
 textarea{

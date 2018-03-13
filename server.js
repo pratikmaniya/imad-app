@@ -56,6 +56,11 @@ function createTemplate (data){
     return htmlTemplate;
 }
 
+app.get('/:articleName', function(req,res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
 function create(data){
     var s = data.toString();
     return s;
@@ -69,11 +74,6 @@ app.get('/ui/hometree/*.html', function(req,res) {
 app.get('/ui/hometree/style/*.css', function(req,res) {
     var url = req.originalUrl;
   res.sendFile(path.join(__dirname, create(url)));
-});
-
-app.get('/:articleName', function(req,res) {
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/', function (req, res) {

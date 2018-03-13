@@ -56,13 +56,26 @@ function createTemplate (data){
     return htmlTemplate;
 }
 
+app.get('/:articleName', function(req,res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
+function createFile (data){
+        return path.join(__dirname,'ui','hometree','filename');
+}
+
+
+app.get('/ui/:fileName', function(req,res) {
+    var fileName = req.params.filename;
+    res.sendFile(createFile(fileName));
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/hometree1.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'hometree','hometree1.html'));
-});
+
 
 app.get('/ui/contactus.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hometree','contactus.html'));
@@ -78,11 +91,6 @@ app.get('/ui/phoneverification.html', function (req, res) {
 
 app.get('/ui/newuser.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hometree','newuser.html'));
-});
-
-app.get('/:articleName', function(req,res) {
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {

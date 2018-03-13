@@ -1,0 +1,84 @@
+body{
+	font-family: sans-serif;
+}
+
+.head{
+	text-decoration: none;
+	margin-left: 580px;
+	font-size: 35px;
+	color: #509040;
+	font-weight: 700;
+}
+
+form{
+	border: 1px solid #509040;
+	border-radius: 5px;
+	margin-left: 473px;
+	padding-bottom: 40px;
+	width: 400px;
+	margin-top: 40px;
+	background-color: rgba(80,900,50,0.4);
+}
+
+h4{
+	color: #509040;
+	text-align: center;
+	font-size: 25px;
+}
+
+h5{
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+p{
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: 700;
+	display: inline;
+}
+
+.resend{
+	float: right;
+	margin-right: 20px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+input{
+	width: 360px;
+	height: 30px;
+	border: 1px solid #509040;
+	border-radius: 3px;
+	margin-left: 20px;
+}
+
+.verify{
+	margin-left: 20px;
+	text-decoration: none;
+	border: 1px solid #509040;
+	border-radius: 3px;
+	font-size: 17px;
+	color: #509040;
+	text-decoration: none;
+	padding: 5px 158px;
+}
+
+.verify:hover{
+	color: white;
+	background-color: #509040;
+}
+
+h3{
+	font-size: 14px;
+	text-align: center;
+	color: #509040;
+}
+
+hr{
+	width: 400px;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,2), rgba(0,0,0,0.1));
+}

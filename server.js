@@ -63,12 +63,12 @@ app.get('/:articleName', function(req,res) {
 
 var files = {
     'hometree1' : {
-        value: 'hometree1.html'
+        data: 'hometree1.html'
     }
 };
 
 function createp (fn){
-    var s = fn.value;
+    var s = fn.data;
     return s;
 }
 

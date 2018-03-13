@@ -5,6 +5,43 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
     
+app.get('/counter', function(req, res) {
+    counter = counter + 1;
+    res.send(counter);    
+});
+
+app.get('/:articleName', function(req,res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
+function create(data){
+    var s = data.toString();
+    return s;
+}
+
+app.get('/ui/hometree/*', function(req,res) {
+    var url = req.originalUrl;
+  res.sendFile(path.join(__dirname, create(url)));
+});
+
+app.get('/ui/hometree/style/*.css', function(req,res) {
+    var url = req.originalUrl;
+  res.sendFile(path.join(__dirname, create(url)));
+});
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
 var articles = {
     'article-one' : {
         title: 'Article one | Pratik Maniya',
@@ -55,39 +92,6 @@ function createTemplate (data){
     `;
     return htmlTemplate;
 }
-
-app.get('/:articleName', function(req,res) {
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
-});
-
-function create(data){
-    var s = data.toString();
-    return s;
-}
-
-app.get('/ui/hometree/*', function(req,res) {
-    var url = req.originalUrl;
-  res.sendFile(path.join(__dirname, create(url)));
-});
-
-app.get('/ui/hometree/style/*.css', function(req,res) {
-    var url = req.originalUrl;
-  res.sendFile(path.join(__dirname, create(url)));
-});
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 

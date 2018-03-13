@@ -57,7 +57,8 @@ function createTemplate (data){
 }
 
 function create(data){
-    console.write(data);
+    var s = `<h1>${data}</h1>`;
+    return s;
 }
 
 app.get('/one', function(req,res) {

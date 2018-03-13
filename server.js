@@ -63,7 +63,7 @@ app.get('/:articleName', function(req,res) {
 
 var files = {
     'hometree1' : {
-        value: 'hometree1.html',
+        value: 'hometree1.html'
     }
 };
 

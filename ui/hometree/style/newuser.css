@@ -44,6 +44,7 @@ input{
 select{
 	border-radius: 3px;
 	border: 1px solid #509040;
+	background-color: transparent;
 }
 
 .mobno{

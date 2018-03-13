@@ -66,7 +66,7 @@ function create(data){
     return s;
 }
 
-app.get('/ui/hometree/*.html', function(req,res) {
+app.get('/ui/hometree/*', function(req,res) {
     var url = req.originalUrl;
   res.sendFile(path.join(__dirname, create(url)));
 });

@@ -25,6 +25,10 @@ header li{
 	margin-left: -50px;
 }
 
+#search{
+    cursor: pointer;
+}
+
 .dropdown-content li a{
 	display: inline;
 	color: #50c050;

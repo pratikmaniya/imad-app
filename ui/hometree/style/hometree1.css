@@ -25,7 +25,7 @@ header li{
 	margin-left: -50px;
 }
 
-#search{
+#search:hover{
     cursor: pointer;
 }
 

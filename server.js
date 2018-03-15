@@ -1,8 +1,11 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
 
+var app = express();
+app.use(morgan('combined'));
+
+var Pool = require('pg').Pool;
 var config = {
     user: 'pratikmmaniya244',
     database: 'pratikmmaniya244',
@@ -10,9 +13,7 @@ var config = {
     port: '5432',
     password: process.env.DB.PASSWORD
 };
-var app = express();
-app.use(morgan('combined'));
-    
+
 var counter = 0;
 app.get('/counter', function(req, res) {
     counter = counter + 1;

@@ -98,6 +98,12 @@ app.get('/check-login', function(req, res) {
     }
 });
 
+app.get('/logout', function(req, res) {
+    delete req.session.auth;
+    res.send('logged out');
+    
+});
+
 app.get('/articles/:articleName', function(req,res) {
     var articleName = req.params.articleName;
     pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function(err,result) {

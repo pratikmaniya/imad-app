@@ -42,7 +42,7 @@ app.get('/hash/:input', function(req, res) {
     res.send(hashedString);
 });
 
-app.get('/create-user', function(req, res) {
+app.post('/create-user', function(req, res) {
     var username = get.body.username;
     var password = get.body.password;
     var salt = crypto.randomeBytes(128).toString('hex');

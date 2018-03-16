@@ -1,6 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var crypto = require('crypto');
 
 var app = express();
 app.use(morgan('combined'));
@@ -14,6 +15,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
+var pool = new Pool(config);
 
 var counter = 0;
 app.get('/counter', function(req, res) {
@@ -28,7 +30,7 @@ app.get('/submit-name/', function (req, res) {
     res.send(JSON.stringify(names));
 });
 
-var pool = new Pool(config);
+
 
 app.get('/articles/:articleName', function(req,res) {
     var articleName = req.params.articleName;

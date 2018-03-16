@@ -88,7 +88,7 @@ login.onclick = function() {
             else if(request.status === 500){
                 alert('something went wrong on server');
             }
-            loadLogin();
+           // loadLogin();
         }
     };
     

@@ -42,16 +42,6 @@ submit.onclick = function() {
     }
 };
 
-function loadLoginForm () {
-    <div>
-                <input type="text" id="username" placeholder="username">
-                <input type="password" id="password" placeholder="password">
-                <br><br>
-                <input type="submit" id="login_btn" value="login">
-                <input type= "submit" id="register_btn" value="register">
-            </div>
-
-
 var login = document.getElementById("login_btn");
 login.onclick = function() {
    

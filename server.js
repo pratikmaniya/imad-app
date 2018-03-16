@@ -90,27 +90,6 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-var articles = {
-    'article-one' : {
-        title: 'Article one | Pratik Maniya',
-        heading: 'Article one',
-        date: 'February 22, 2018',
-        content: `<p>This is content for my first article.</p>`
-    },
-    'article-two' : {
-        title: 'Article two | Pratik Maniya',
-        heading: 'Article two',
-        date: 'February 28, 2018',
-        content: `<p>This is content for my second article.</p>`
-    },
-    'article-three' : {
-        title: 'Article three | Pratik Maniya',
-        heading: 'Article three',
-        date: 'March 5, 2018',
-        content: `<p>This is content for my third article.</p>`
-    }
-};
-
 function createTemplate (data){
     var title = data.title;
     var date = data.date;

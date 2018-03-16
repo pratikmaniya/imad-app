@@ -88,6 +88,7 @@ login.onclick = function() {
             else if(request.status === 500){
                 alert('something went wrong on server');
             }
+            loadLogin();
         }
     };
     
@@ -100,6 +101,22 @@ login.onclick = function() {
     request.send(JSON.stringify({username: username, password: password}));
 };
 
+function loadLogin () {
+    // Check if the user is already logged in
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+                loadLoggedInUser(this.responseText);
+            } else {
+                loadLoginForm();
+            }
+        }
+    };
+    
+    request.open('GET', '/check-login', true);
+    request.send(null);
+}
 
 
 

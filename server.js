@@ -94,14 +94,13 @@ app.get('/check-login', function(req, res) {
         res.send('you are logged in: '+req.session.auth.userId.toString());
     }
     else{
-        req.send('you are not logged in');
+        res.send('you are not logged in');
     }
 });
 
 app.get('/logout', function(req, res) {
     delete req.session.auth;
     res.send('logged out');
-    
 });
 
 app.get('/articles/:articleName', function(req,res) {

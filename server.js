@@ -123,8 +123,8 @@ function createTemplate (data){
     		<meta name="viewport" content="width=device-width,initial-scale=1"/>
     		<link href="/ui/style.css" rel="stylesheet" />
     	</head>
-    	<center>
     	<body style="width:600px;">
+    	  <div class="container">
     		<a href="/">Home</a>
     		<hr/>
     		<h3>
@@ -136,8 +136,8 @@ function createTemplate (data){
     		<div>
     			${content}
     		</div>
+    	  </div>
     	</body>
-    	</center>
     </html> 
     `;
     return htmlTemplate;

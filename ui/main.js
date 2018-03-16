@@ -62,7 +62,6 @@ submit_btn.onclick = function() {
             }
         }
     };
-};
     
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -71,6 +70,6 @@ submit_btn.onclick = function() {
     request.open('POST','http://pratikmmaniya244.imad.hasura-app.io/login',true);
     request.setRequestHeader('content-type','application/json');
     request.send(JSON.stringify({username: username, password: password}));
-
+};
     
 console.log("loaded");

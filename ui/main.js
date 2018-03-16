@@ -152,7 +152,6 @@ function loadArticles () {
     request.send(null);
 }
 
-// The first thing to do is to check if the user is logged in!
-
-// Now this is something that we could have directly done on the server-side using templating too!
 loadArticles();
+
+loadLogin();

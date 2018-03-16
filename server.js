@@ -52,7 +52,6 @@ app.post('/create-user', function(req, res) {
             res.status(500).send(err.toString());
         }    
         else{
-            var articleData = result.rows[0];
             res.send('User successfully created: '+username);
         }     
     });

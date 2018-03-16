@@ -28,7 +28,7 @@ app.get('/submit-name/', function (req, res) {
     res.send(JSON.stringify(names));
 });
 
-var pool = new Pool(config);
+
 
 app.get('/articles/:articleName', function(req,res) {
     var articleName = req.params.articleName;

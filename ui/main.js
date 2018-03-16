@@ -148,7 +148,7 @@ function loadArticles () {
         }
     };
     
-    request.open('GET', '/articles/get-articles', true);
+    request.open('GET', '/articles/:articleName', true);
     request.send(null);
 }
 

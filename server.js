@@ -9,6 +9,21 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
+var Pool = require('pg').Pool;
+var config = {
+    user: 'pratikmmaniya244',
+    database: 'pratikmmaniya244',
+    host: 'db.imad.hasura-app.io',
+    port: '5432',
+    password: process.env.DB_PASSWORD
+};
+
+app.use(session({
+    secret: 'someRandomSecretValue',
+    cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}
+}));
+
+var pool = new Pool(config);
 
 
 var counter = 0;

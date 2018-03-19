@@ -18,10 +18,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-app.use(session({
-    secret: 'someRandomSecretValue',
-    cookie: {maxAge: 1000 * 60 * 60 * 24 * 30}
-}));
+
 
 var pool = new Pool(config);
 

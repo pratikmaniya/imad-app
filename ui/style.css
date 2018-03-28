@@ -3,8 +3,7 @@ body {
     background-color: lightgrey;
     margin-top: 75px;
     width: 50%;
-    text-align: center;
-    align-content: center;
+    margin: auto;
 }
 
 .center {

@@ -20,4 +20,5 @@ body {
 
 .img-medium {
     height: 200px;
+    border-radius: 25%;
 }

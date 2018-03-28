@@ -157,21 +157,6 @@ app.get('/articles/:articleName', function(req,res) {
     });
 });
 
-function create(data){
-    var s = data.toString();
-    return s;
-}
-
-app.get('/ui/hometree/*', function(req,res) {
-    var url = req.originalUrl;
-  res.sendFile(path.join(__dirname, create(url)));
-});
-
-app.get('/ui/hometree/style/*.css', function(req,res) {
-    var url = req.originalUrl;
-  res.sendFile(path.join(__dirname, create(url)));
-});
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -200,4 +185,19 @@ app.get('/get-articles', function (req, res) {
           res.send(JSON.stringify(result.rows));
       }
    })
+});
+
+function create(data){
+    var s = data.toString();
+    return s;
+}
+
+app.get('/ui/hometree/*', function(req,res) {
+    var url = req.originalUrl;
+  res.sendFile(path.join(__dirname, create(url)));
+});
+
+app.get('/ui/hometree/style/*.css', function(req,res) {
+    var url = req.originalUrl;
+  res.sendFile(path.join(__dirname, create(url)));
 });

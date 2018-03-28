@@ -19,18 +19,3 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
-function create(data){
-    var s = data.toString();
-    return s;
-}
-
-app.get('/ui/hometree/*', function(req,res) {
-    var url = req.originalUrl;
-  res.sendFile(path.join(__dirname, create(url)));
-});
-
-app.get('/ui/hometree/style/*.css', function(req,res) {
-    var url = req.originalUrl;
-  res.sendFile(path.join(__dirname, create(url)));
-});

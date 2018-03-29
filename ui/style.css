@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: #ff8800;
-    width: 75%;
+    width: 80%;
     margin: 50px auto;
 }
 
@@ -19,5 +19,5 @@ body {
 
 .img-medium {
     height: 200px;
-    border-radius: 50%;
+    border-radius: 40%;
 }

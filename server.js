@@ -30,6 +30,16 @@ app.get('/counter', function(req, res) {
     res.send(counter.toString());    
 });
 
+function create(data){
+    var s = data.toString();
+    return s;
+}
+
+app.get('/ui/hometree/*', function(req,res) {
+    var url = req.originalUrl;
+  res.sendFile(path.join(__dirname, create(url)));
+});
+
 var names = [];
 app.get('/submit-name/', function (req, res) {
     var name = req.query.name;

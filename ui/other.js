@@ -1,6 +1,6 @@
 function loadRegisterForm () {
-  var loginHtml = `
-        <h4>Sign up</h4>
+    var loginHtml = `
+          <h4>Sign up</h4>
 		  <p>Your Name</p>
 		  <center>
 		  <input id="name" type="text" name="name">
@@ -24,9 +24,9 @@ function loadRegisterForm () {
 		  <br>
 		  <h2>Already have an account?<a class ="backlink" href="./signin.html">Sign in</a></h2>
         `;
-   document.getElementById('register_area').innerHTML = loginHtml;
+    document.getElementById('register_area').innerHTML = loginHtml;
     
-  var register = document.getElementById('register_btn');
+    var register = document.getElementById('register_btn');
 	    register.onclick = function () {
             // Create a request object
             var request = new XMLHttpRequest();
@@ -61,3 +61,5 @@ function loadRegisterForm () {
             register.value = 'Registering...';
 	    }; 
 }
+
+loadRegisterForm();

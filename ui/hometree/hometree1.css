@@ -4,10 +4,10 @@
 
 header{
     background-color: #fff;
-    padding: 0 500%;
+    padding: 0 30px;
 }
 
-header h1{
+h1{
 	font-size: 350%;
 	margin-top: 20px;
 	color: #50c050;

@@ -92,6 +92,8 @@ function loadLoggedInUser (username) {
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout">Logout</a>
     `;
+    var signinbtn = document.getElementById('userlogin');
+    signinbtn.innerHTML = `<p>${username}<p>`;
 }
 
 function loadLogin () {
@@ -101,7 +103,6 @@ function loadLogin () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
-                document.getElementById('userlogin').innerHTML = `<p>${username}<p>`;
             } else {
                 loadLoginForm();
             }

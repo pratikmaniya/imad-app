@@ -5,7 +5,9 @@
 		<title>Home Tree - sign up</title>
 		<link rel="icon" href="/ui/hometree/33.ico" type="image/x-icon">
 		<script>
-		    function clickfunction () {
+		    
+		    var register = document.getElementById('register_btn');
+            register.onclick = function () {
             // Create a request object
             var request = new XMLHttpRequest();
         
@@ -64,7 +66,7 @@
 		  </center>
 		  <br>
 		  <center>
-		  <input type="submit" onclick= "clickfunction" id="register_btn" class="register" value="register"/>
+		  <input type="submit" id="register_btn" class="register" value="register"/>
 		  </center>
 		  <br>
 		  <h2>Already have an account?<a class ="backlink" href="./signin.html">Sign in</a></h2>

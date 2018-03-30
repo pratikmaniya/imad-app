@@ -5,6 +5,7 @@
 		<title>Home Tree - sign up</title>
 		<link rel="icon" href="/ui/hometree/33.ico" type="image/x-icon">
 		<script>
+		function register () {
 		    var register = document.getElementById('register_btn');
             register.onclick = function () {
                 // Create a request object
@@ -39,7 +40,8 @@
                 request.send(JSON.stringify({name: name, mobile: mnumber, username: username, password: password}));  
                 register.value = 'Registering...';
             };
-       
+		}
+		register();
 		</script>
 	</head>
 	<body>

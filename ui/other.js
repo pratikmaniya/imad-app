@@ -53,6 +53,8 @@ function loadRegisterForm () {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
                 
+            console.log(name);
+            console.log(mnumber);
             console.log(username);
             console.log(password);
             request.open('POST', '/create-user', true);

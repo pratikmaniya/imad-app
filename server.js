@@ -115,7 +115,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function(req, res) {
     delete req.session.auth;
-    res.send(`<a href="/"><h3>home</h3></a><br><br><a href="/ui/hometree/hometree1.html">home tree</a><br><h2>successfully logged out<h2>`);
+    res.send(`<a href="/"><h3>home</h3></a><br><a href="/ui/hometree/hometree1.html">home tree</a><br><br><h2>successfully logged out<h2>`);
 });
 
 app.get('/articles/:articleName', function(req,res) {

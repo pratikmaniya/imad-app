@@ -1,5 +1,5 @@
 function loadRegisterForm () {
-    var loginHtml = `
+    var registerHtml = `
           <h4>Sign up</h4>
 		  <p>Your Name</p>
 		  <center>
@@ -24,7 +24,7 @@ function loadRegisterForm () {
 		  <br>
 		  <h2>Already have an account?<a class ="backlink" href="./signin.html">Sign in</a></h2>
         `;
-    document.getElementById('register_area').innerHTML = loginHtml;
+    document.getElementById('register_area').innerHTML = registerHtml;
     
     var register = document.getElementById('register_btn');
 	    register.onclick = function () {

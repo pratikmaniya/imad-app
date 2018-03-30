@@ -78,7 +78,22 @@
       </ul>
     </div>
     </footer>
-    <script type="text/javascript" src="/ui/main.js">
+    <script>
+        function signinbtn () {
+            var signinbtn = document.getElementById('userlogin');
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (request.status === 200) {
+                    signinbtn.innerHTML = "Sign out";
+                }
+                else{
+                    signinbtn.innerHTML = "Sign in";    
+                }
+            };
+        
+            request.open('GET', '/check-login', true);
+            request.send(null);
+        }
     </script>
 </body>
 </html>

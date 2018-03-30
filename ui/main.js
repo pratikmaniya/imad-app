@@ -111,5 +111,9 @@ function loadLogin () {
     request.send(null);
 }
 
+function checklogin() {
+    var text=document.getElementById('userlogin');
+}
+
 loadLogin();
 

@@ -58,11 +58,13 @@ select{
 	border: 1px solid #509040;
 	border-radius: 3px; 
 	padding: 5px 10px;
+	background-color: transparent;
 }
 
 .register:hover{
 	color: white;
 	background-color: #509040;
+	cursor: pointer;
 }
 
 .backlink{

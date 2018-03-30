@@ -7,6 +7,24 @@
 		<link rel="icon" href="/ui/hometree/33.ico" type="image/x-icon">
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script>
+            function signinbtn () {
+                var signinbtn = document.getElementById('userlogin');
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function () {
+                    if (request.status === 200) {
+                        signinbtn.innerHTML = "Sign out";
+                    }
+                    else{
+                        signinbtn.innerHTML = "Sign in";    
+                    }
+                };
+            
+                request.open('GET', '/check-login', true);
+                request.send(null);
+            }
+            signinbtn();
+        </script>
 	</head>
 	<div class="header">
 	  <header class="container">
@@ -78,22 +96,5 @@
       </ul>
     </div>
     </footer>
-    <script>
-        function signinbtn () {
-            var signinbtn = document.getElementById('userlogin');
-            var request = new XMLHttpRequest();
-            request.onreadystatechange = function () {
-                if (request.status === 200) {
-                    signinbtn.innerHTML = "Sign out";
-                }
-                else{
-                    signinbtn.innerHTML = "Sign in";    
-                }
-            };
-        
-            request.open('GET', '/check-login', true);
-            request.send(null);
-        }
-    </script>
 </body>
 </html>

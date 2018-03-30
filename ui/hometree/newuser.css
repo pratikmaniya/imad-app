@@ -15,7 +15,7 @@ div{
 	border: 1px solid #509040;
 	border-radius: 5px;	
 	width: 400px;
-	margin-top: 20px auto 0px auto;
+	margin: 20px auto 0 auto;
 	background-color: rgba(80,900,50,0.4);
 }
 

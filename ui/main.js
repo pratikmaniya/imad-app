@@ -74,13 +74,17 @@ function loadLoginForm () {
         };
         
         // Make the request
+        
+        var name = document.getElementById('name').value;
+        var mnumber = document.getElementById('mnumber').value;
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
+        
         console.log(username);
         console.log(password);
         request.open('POST', '/create-user', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: username, password: password}));  
+        request.send(JSON.stringify({name: name, mobile: mnumber, username: username, password: password}));  
         register.value = 'Registering...';
     
     };

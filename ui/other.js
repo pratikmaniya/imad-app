@@ -49,7 +49,7 @@ function loadRegisterForm () {
             // Make the request
                 
             var name = document.getElementById('name').value;
-            var mnumber = document.getElementById('mnumber').value;
+            var mobile = document.getElementById('mnumber').value;
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
                 
@@ -59,7 +59,7 @@ function loadRegisterForm () {
             console.log(password);
             request.open('POST', '/create-user', true);
             request.setRequestHeader('Content-Type', 'application/json');
-            request.send(JSON.stringify({name: name, mobile: mnumber, username: username, password: password}));
+            request.send(JSON.stringify({name: name, mobile: mobile, username: username, password: password}));
             register.value = 'Registering...';
 	}; 
 }

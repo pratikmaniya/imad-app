@@ -1,24 +1,34 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/ui/hometree/signin.css">
+		<link rel="stylesheet" type="text/css" href="signin.css">
 		<meta charset="UTF-8">
 		<title>Home Tree - Sign in</title>
 	</head>
 	<body>
-		<a href="./hometree1.html">Home Tree</a>
+		<a href="./hometree1.html" class="title">Home Tree</a>
 		<form action="#action" target="_parent" method="post">
 		  <h4>Sign in</h4>
 		  <p class="form">Email or Mobile number</p>
+		  <center>
 		  <input type="text" name="userid" id="username">
+		  </center>
 		  <p class="form">Password</p>
+		  <center>
 		  <input type="password" name="password" id="password">
+		  </center>
 		  <br><br>
+		  <center>
 		  <a href="#help">Forgot password?</a>
-		  <br><br>
-		  <a class="signin" href="#submit" id="login_btn">sign in</a>
-		  <br><br>
+		  </center>
+		  <br>
+		  <center>
+		  <button class="signin" href="#submit" id="login_btn">sign in</button>
+		  </center>
+		  <br>
 		  <p class="form">don't have an account?</p>
-		  <a class="last" href="./newuser.html">create your Home Tree account</a>
+		  <center>
+		  <button class="register" href="./newuser.html">create your Home Tree account</button>
+		  </center>
 		</form>
 		<hr>
 		 <p class="copyright">&copy;2017 Home Tree, All Rights Reserved.</p>

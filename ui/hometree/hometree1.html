@@ -13,10 +13,10 @@
                 var request = new XMLHttpRequest();
                 request.onreadystatechange = function () {
                     if (request.status === 200) {
-                        signinbtn.innerHTML = "Sign out";
+                        signinbtn.innerHTML = `<a href="/logout">Sign out</a>`;
                     }
                     else{
-                        signinbtn.innerHTML = "Sign in";    
+                        signinbtn.innerHTML = `<a href="/signin.html"></a>`;    
                     }
                 };
             
@@ -38,7 +38,7 @@
 			  <li><a href="#garden">Garden</a></li>
 			  <li><a href="#gardener">Gardener</a></li>
 			  <li><a href="./contactus.html">Contact us</a></li>
-			  <li><a href="./signin.html"><span id="userlogin">Sign in</span></a></li>
+			  <li id="userlogin"></li>
 		    </div>
 		  </div>
 		  </ul>

@@ -73,12 +73,12 @@ header li a:hover{
 }
 
 .jumbotron{
-	margin-top: 5vw;
+	margin-top: 3vw;
 	display: flex;
 	align-items: center;
 	background-image: url('/ui/hometree/jumbotron.jpg');
 	background-size: cover;
-	height: 700px;
+	height: 300px;
 	z-index: 0;
 }
 

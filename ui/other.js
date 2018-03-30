@@ -27,7 +27,7 @@ function loadRegisterForm () {
     document.getElementById('register_area').innerHTML = registerHtml;
     
     var register = document.getElementById('register_btn');
-	    register.onclick = function () {
+	register.onclick = function () {
             // Create a request object
             var request = new XMLHttpRequest();
         
@@ -59,7 +59,7 @@ function loadRegisterForm () {
             request.setRequestHeader('Content-Type', 'application/json');
             request.send(JSON.stringify({name: name, mobile: mnumber, username: username, password: password}));  
             register.value = 'Registering...';
-	    }; 
+	}; 
 }
 
 loadRegisterForm();

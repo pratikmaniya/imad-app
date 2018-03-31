@@ -1,13 +1,15 @@
 function loadLoginForm () {
     var loginHtml = `
+          <center>
           <h4>Sign in</h4>
+		  </center>
 		  <p class="form">Email or Mobile number</p>
 		  <center>
-		  <input type="text" name="userid" id="username">
+		  <input class="form" type="text" name="userid" id="username">
 		  </center>
 		  <p class="form">Password</p>
 		  <center>
-		  <input type="password" name="password" id="password">
+		  <input class="form" type="password" name="password" id="password">
 		  </center>
 		  <br>
 		  <center>

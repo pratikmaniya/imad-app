@@ -1,6 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `
-        <h4>Sign in</h4>
+          <h4>Sign in</h4>
 		  <p class="form">Email or Mobile number</p>
 		  <center>
 		  <input type="text" name="userid" id="username">

@@ -13,6 +13,10 @@ body{
 	text-decoration: none;
 }
 
+p{
+    margin-left: 5%;
+}
+
 .outer{
 	border: 1px solid #509040;
 	border-radius: 5px;	

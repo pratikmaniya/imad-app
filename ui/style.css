@@ -11,6 +11,14 @@ body {
     border-radius: 5px;
 }
 
+.form{
+    width: 90%;
+}
+
+p{
+    margin-left: 5px;
+}
+
 .center {
     text-align: center;
 }

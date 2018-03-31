@@ -19,8 +19,8 @@ function loadLoginForm () {
     document.getElementById('login_area').innerHTML = loginHtml;
     
     
-    var register = document.getElementById('registerbtn');
-    register.onclick = function () {
+    var registerFH = document.getElementById('registerbtn');
+    registerFH.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -30,10 +30,10 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   alert('User created successfully');
-                  register.value = 'Registered!';
+                  registerFH.value = 'Registered!';
               } else {
                   alert('Could not register the user');
-                  register.value = 'Register';
+                  registerFH.value = 'Register';
               }
           }
         };
@@ -48,7 +48,7 @@ function loadLoginForm () {
         request.open('POST', '/create-user-from-home', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
-        register.value = 'Registering...';
+        registerFH.value = 'Registering...';
     
     };
     

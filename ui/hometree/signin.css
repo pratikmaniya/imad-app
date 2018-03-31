@@ -13,10 +13,6 @@ body{
 	text-decoration: none;
 }
 
-.label{
-    margin-left: 50px;
-}
-
 .outer{
 	border: 1px solid #509040;
 	border-radius: 5px;	
@@ -41,10 +37,14 @@ h4{
 	font-size: 25px;
 }
 
-#form{
+form{
 	font-size: 12px;
 	font-weight: 700;
 	margin-left: 0;
+}
+
+.label{
+    margin-left: 5%;
 }
 
 .outer .signin{

@@ -18,6 +18,8 @@ function loadLoginForm () {
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
+    
+    // Submit username/password to login
     var submit = document.getElementById('login_btn');
     submit.onclick = function () {
         // Create a request object
@@ -53,7 +55,6 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
-        
     };
     
     var registerFH = document.getElementById('registerbtn');
@@ -86,11 +87,7 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         registerFH.value = 'Registering...';
-    
     };
-    
-    // Submit username/password to login
-    
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {

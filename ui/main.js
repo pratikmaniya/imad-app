@@ -90,7 +90,7 @@ function loadLoginForm () {
         request.send(JSON.stringify({name: name, mobile: mnumber, username: username, password: password}));  
         register.value = 'Registering...';
     };
-    var register = document.getElementById('register_bt');
+    var register = document.getElementById('register');
     register.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();

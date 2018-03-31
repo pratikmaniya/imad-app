@@ -22,7 +22,6 @@ body{
 }
 
 input{
-	
 	width: 90%;
 	height: 30px;
 	border: 1px solid #509040;
@@ -42,6 +41,8 @@ h4{
 }
 
 #label{
+	font-size: 12px;
+	font-weight: 700;
     margin-left: 5%;
 }
 

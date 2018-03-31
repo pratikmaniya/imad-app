@@ -3,11 +3,11 @@ function loadLoginForm () {
           <center>
           <h4>Sign in</h4>
 		  </center>
-		  <p class="form label">Email or Mobile number</p>
+		  <p class="form" id="label">Email or Mobile number</p>
 		  <center>
 		  <input class="form" type="text" name="userid" id="username">
 		  </center>
-		  <p class="form label">Password</p>
+		  <p class="form" id="label">Password</p>
 		  <center>
 		  <input class="form" type="password" name="password" id="password">
 		  </center>

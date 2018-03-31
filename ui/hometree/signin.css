@@ -21,7 +21,7 @@ body{
 	border: 1px solid #509040;
 	border-radius: 5px;	
 	width: 400px;
-	margin: 40px auto 0px auto;
+	margin: 40px auto 0 auto;
 	
 	background-color: rgba(80,900,50,0.4);
 	padding-bottom: 30px;
@@ -41,7 +41,7 @@ h4{
 	font-size: 25px;
 }
 
-.form{
+#form{
 	font-size: 12px;
 	font-weight: 700;
 	margin-left: 0;

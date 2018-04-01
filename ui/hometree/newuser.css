@@ -10,6 +10,10 @@ body{
 	font-weight: 700;
 }
 
+.infield{
+    padding: 5px;
+}
+
 div{
 	border: 1px solid #509040;
 	border-radius: 5px;	

@@ -7,7 +7,7 @@ function loadRegisterForm () {
 		  </center>
 		  <p>Mobile Number</p>
 		  <center>
-		  <input type="text" class="infield" id="mnumber" name="mobilenumber" placeholder="Mobile number">
+		  <input type="text" class="infield" id="mnumber" name="mobilenumber" placeholder="10 digits only">
 		  </center>
 		  <p>Username</p>
 		  <center>

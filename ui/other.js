@@ -9,7 +9,7 @@ function loadRegisterForm () {
 		  <center>
 		  <input type="text" id="mnumber" name="mobilenumber" placeholder="Mobile number">
 		  </center>
-		  <p>Email Address(Optional)</p>
+		  <p>Username</p>
 		  <center>
 		  <input type="text" name="email" id ="username">
 		  </center>

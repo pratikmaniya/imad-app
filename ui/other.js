@@ -3,19 +3,19 @@ function loadRegisterForm () {
           <h4>Sign up</h4>
 		  <p>Your Name</p>
 		  <center>
-		  <input id="name" type="text" name="name">
+		  <input id="name" class="infield" type="text" name="name">
 		  </center>
 		  <p>Mobile Number</p>
 		  <center>
-		  <input type="text" id="mnumber" name="mobilenumber" placeholder="Mobile number">
+		  <input type="text" class="infield" id="mnumber" name="mobilenumber" placeholder="Mobile number">
 		  </center>
 		  <p>Username</p>
 		  <center>
-		  <input type="text" name="email" id ="username">
+		  <input type="text" class="infield" name="email" id ="username">
 		  </center>
 		  <p>Password</p>
 		  <center>
-		  <input type="password" id="password" name="password" placeholder="At least 6 characters">
+		  <input type="password" id="password" class="infield" name="password" placeholder="At least 6 characters">
 		  </center>
 		  <br>
 		  <center>

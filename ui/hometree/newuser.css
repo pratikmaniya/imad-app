@@ -12,6 +12,7 @@ body{
 
 .infield{
     padding: 0 5px;
+    width: 90%;
 }
 
 div{
@@ -35,7 +36,6 @@ p{
 }
 
 input{
-	width: 360px;
 	height: 30px;
 	border: 1px solid #509040;
 	border-radius: 3px;

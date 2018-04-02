@@ -3,7 +3,7 @@ function loadLoginForm () {
           <center>
           <h4>Sign in</h4>
 		  </center>
-		  <p id="label">Email or Mobile number</p>
+		  <p id="label">username</p>
 		  <center>
 		  <input class="form" type="text" name="userid" id="username">
 		  </center>

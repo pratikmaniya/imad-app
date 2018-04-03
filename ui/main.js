@@ -118,7 +118,7 @@ function loadLogin () {
 loadLogin();
 
 var submit = document.getElementById('submit_btn');
- submit.onclick = function () {
+submit.onclick = function () {
      // Make the request
     var nameInput = document.getElementById('name');
     var name = nameInput.value;

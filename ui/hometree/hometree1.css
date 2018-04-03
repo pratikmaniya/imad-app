@@ -146,7 +146,9 @@ section .row img{
 	background-color: white;
 }
 
-
+.gallery a:visited{
+    color: #fff;
+}
 
 footer .row{
 	display: flex;

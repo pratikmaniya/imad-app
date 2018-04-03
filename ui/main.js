@@ -146,13 +146,18 @@ var request = new XMLHttpRequest();
     request.send(null);  
  }; 
  
- var button = document.getElementById('counter');
+var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function () {
-  // Make a request to the counter endpoint
-  // Capture the response if the request was succesfully completed
-  // Render the response in the HTML
-  counter = counter + 1;
-  var span = document.getElementById('count');
-  span.innerHTML = counter.toString();
- };
+    counter = counter + 1;
+    request.onreadystatechange = function () {
+      if (request.readyState === XMLHttpRequest.DONE) {
+          // Take some action
+          if (request.status === 200) {
+              var counter = request.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();          
+            }
+        }  
+    };
+};

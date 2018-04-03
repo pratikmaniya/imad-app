@@ -149,13 +149,15 @@ var request = new XMLHttpRequest();
 var button = document.getElementById('counter');
 button.onclick = function () {
     counter = counter + 1;
-    request.onreadystatechange = function () {
-      if (request.readyState === XMLHttpRequest.DONE) {
-          // Take some action
-          if (request.status === 200) {
-              var counter = request.responseText;
-              var span = document.getElementById('count');
-              span.innerHTML = counter.toString();          
+    var request = new XMLHttpRequest();
+    
+        request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            // Take some action
+            if (request.status === 200) {
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();          
             }
         }  
     };

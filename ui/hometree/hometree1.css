@@ -146,10 +146,6 @@ section .row img{
 	background-color: white;
 }
 
-.gallery a:active{
-    color: #fff;
-}
-
 footer .row{
 	display: flex;
 	align-items: center;

@@ -146,7 +146,7 @@ section .row img{
 	background-color: white;
 }
 
-.gallery a:visited{
+.gallery a:active{
     color: #fff;
 }
 

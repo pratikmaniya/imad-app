@@ -142,6 +142,6 @@ var request = new XMLHttpRequest();
     };
     
     // Make the request
-    request.open('GET', 'http://coco98.imad.hasura-app.io/submit-name?name=' + name, true);
+    request.open('GET', '/submit-name?name=' + name, true);
     request.send(null);  
  }; 

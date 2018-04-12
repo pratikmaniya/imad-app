@@ -96,7 +96,7 @@ function loadLoggedInUser (username) {
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout">Logout</a>
     `;
-    document.getElementById('registerbtn').style.display = "hidden";
+    document.getElementById('registerbtn').type = "hidden";
 }
 
 function loadLogin () {

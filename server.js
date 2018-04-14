@@ -92,7 +92,7 @@ app.post('/create-user-from-home', function(req, res) {
 app.post('/login', function(req, res) {
     var username = req.body.username;
     var password = req.body.password;
-    pool.query('SELECT * FROM "newuser" WHERE username = $1', [username], function(err, result) {
+    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function(err, result) {
        if(err){
             res.status(500).send(err.toString());
         }    
@@ -278,7 +278,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
 app.get('/get-comments/:articleName', function (req, res) {
    // make a select request
    // return a response with the results
-   pool.query('SELECT comment.*, "newuser".username FROM article, comment, "newuser" WHERE article.title = $1 AND article.id = comment.article_id AND comment.user_id = "user".id ORDER BY comment.timestamp DESC', [req.params.articleName], function (err, result) {
+   pool.query('SELECT comment.*, "user".username FROM article, comment, "user" WHERE article.title = $1 AND article.id = comment.article_id AND comment.user_id = "user".id ORDER BY comment.timestamp DESC', [req.params.articleName], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {

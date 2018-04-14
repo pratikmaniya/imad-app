@@ -191,3 +191,5 @@ function loadArticles () {
     request.open('GET', '/get-articles', true);
     request.send(null);
 }
+
+loadArticles();

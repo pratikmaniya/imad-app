@@ -222,7 +222,7 @@ app.get('/get-articles', function (req, res) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
-          res.send(createTempleate(JSON.stringify(result.rows)));
+          res.send(JSON.stringify(result.rows));
       }
    })
 });

@@ -117,6 +117,25 @@ function loadLogin () {
 }
 
 loadLogin();
+ 
+var button = document.getElementById('counter');
+button.onclick = function () {
+    counter = counter + 1;
+    var request = new XMLHttpRequest();
+    
+        request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            // Take some action
+            if (request.status === 200) {
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();          
+            }
+        }  
+    };
+    request.open('GET', '/counter', true);
+    request.send(null);
+};
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
@@ -139,32 +158,12 @@ var request = new XMLHttpRequest();
       }  
       // Not done yet
     };
-    
     // Make the request
     var nameInput = document.getElementById('name'); 
     var name = nameInput.value;
     request.open('GET', '/submit-name?name=' + name, true);
     request.send(null);  
  }; 
- 
-var button = document.getElementById('counter');
-button.onclick = function () {
-    counter = counter + 1;
-    var request = new XMLHttpRequest();
-    
-        request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE) {
-            // Take some action
-            if (request.status === 200) {
-                var counter = request.responseText;
-                var span = document.getElementById('count');
-                span.innerHTML = counter.toString();          
-            }
-        }  
-    };
-    request.open('GET', '/counter', true);
-    request.send(null);
-};
 
 function loadArticles () {
         // Check if the user is already logged in

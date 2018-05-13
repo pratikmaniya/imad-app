@@ -39,12 +39,14 @@ p{
 }
 
 .comment {
-    margin-left: 10px;
+    margin-left: 5px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    font-size: 1em;
 }
 
 .commenter {
+    margin-left: 5px;
     font-style: italic;
     font-size: 0.8em;
 }

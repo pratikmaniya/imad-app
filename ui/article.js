@@ -81,7 +81,7 @@ function loadComments () {
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
-                    </div><hr>`;
+                    </div>`;
                 }
                 comments.innerHTML = content;
             } else {

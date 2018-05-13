@@ -39,13 +39,13 @@ p{
 }
 
 .comment {
+    margin-left: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
     font-size: 1em;
 }
 
 .commenter {
-    margin-left: 20px;
     font-style: italic;
     font-size: 0.8em;
 }

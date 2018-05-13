@@ -46,6 +46,7 @@ p{
 }
 
 .commenter {
+    float: left;
     font-style: italic;
     font-size: 0.8em;
 }

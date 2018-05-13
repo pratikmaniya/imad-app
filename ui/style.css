@@ -39,7 +39,7 @@ p{
 }
 
 .comment {
-    margin-left: 20px;
+    margin-left: -20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
     font-size: 1em;

@@ -15,7 +15,7 @@ function loadRegisterForm () {
 		  </center>
 		  <p>Password</p>
 		  <center>
-		  <input type="password" class="infield" id="npassword" placeholder="At least 6 characters" autocomplete="off">
+		  <input type="password" class="infield" id="npassword" value="At least 6 characters" autocomplete="off">
 		  </center>
 		  <br>
 		  <center>

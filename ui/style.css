@@ -39,7 +39,7 @@ p{
 }
 
 .comment {
-    margin-left: 10px;
+    margin-left: 5px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
     font-size: 1em;
@@ -49,6 +49,7 @@ p{
     float: right;
     font-style: italic;
     font-size: 0.8em;
+    padding-right: 5px;
 }
 
 #comment_form {

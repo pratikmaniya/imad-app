@@ -11,11 +11,11 @@ function loadRegisterForm () {
 		  </center>
 		  <p>Username</p>
 		  <center>
-		  <input type="text" class="infield" name="email" id ="username">
+		  <input type="text" class="infield" name="email" id ="nusername">
 		  </center>
 		  <p>Password</p>
 		  <center>
-		  <input type="password" id="password" class="infield" name="password" placeholder="At least 6 characters">
+		  <input type="password" id="password" class="infield" name="npassword" placeholder="At least 6 characters">
 		  </center>
 		  <br>
 		  <center>
@@ -50,8 +50,8 @@ function loadRegisterForm () {
                 
             var name = document.getElementById('name').value;
             var mobile = document.getElementById('mnumber').value;
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
+            var username = document.getElementById('nusername').value;
+            var password = document.getElementById('npassword').value;
                 
             console.log(name);
             console.log(mobile);

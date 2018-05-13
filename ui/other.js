@@ -11,11 +11,11 @@ function loadRegisterForm () {
 		  </center>
 		  <p>Username</p>
 		  <center>
-		  <input type="text" style="display:none" name="hidden" class="infield"  value="" id ="nusername" autocomplete="newpassword">
+		  <input type="text" name="hidden" class="infield"  value="" id ="nusername">
 		  </center>
 		  <p>Password</p>
 		  <center>
-		  <input type="password" class="infield" id="npassword" placeholder="At least 6 characters" autocomplete="off">
+		  <input type="password" class="infield" id="npassword" placeholder="At least 6 characters">
 		  </center>
 		  <br>
 		  <center>

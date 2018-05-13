@@ -49,6 +49,7 @@ p{
     float: right;
     font-style: italic;
     font-size: 0.8em;
+    padding-bottom: 10px;
 }
 
 #comment_form {

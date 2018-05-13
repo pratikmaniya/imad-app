@@ -45,6 +45,7 @@ p{
 }
 
 .commenter {
+    margin-left: 20px;
     font-style: italic;
     font-size: 0.8em;
 }

@@ -284,6 +284,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
        });     
     } else {
         res.status(403).send('Only logged in users can comment');
+        alert('login first');
     }
 });
 

@@ -11,7 +11,7 @@ function loadRegisterForm () {
 		  </center>
 		  <p>Username</p>
 		  <center>
-		  <input type="text" name="hidden" class="infield"  id ="nusername" autocomplete="false">
+		  <input type="text" name="hidden" class="infield"  id ="nusername" autocomplete="off">
 		  </center>
 		  <p>Password</p>
 		  <center>

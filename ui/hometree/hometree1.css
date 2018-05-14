@@ -291,7 +291,7 @@ footer ul{
 		color: #50c050;
 		font-size: 16px;
 		font-weight: 700;
-		position: relative;
+		position: static;
 		top: 20px;
 		border-bottom: 1px solid #50d050;
 	}

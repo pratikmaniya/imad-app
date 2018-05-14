@@ -295,12 +295,7 @@ footer ul{
 		top: 0px;
 		border-bottom: 1px solid #50d050;
 	}
-    .dropdown:hover .dropdown-content{
-		display: block;
-	}
-	.dropdown:hover .dropbtn{
-		border-bottom: none;
-	}
+	
 	header li:last-child{
 		border-bottom: 1px solid #50d050;
 	}

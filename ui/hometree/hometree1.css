@@ -295,7 +295,7 @@ footer ul{
 		position: static;
 		border-bottom: 1px solid #50d050;
 	}
-	.dropbtn:focus{
+	.dropbtn:active{
 	    border: none;
 	}
 	header li:last-child{

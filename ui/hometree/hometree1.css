@@ -303,4 +303,7 @@ footer ul{
 		margin-left: 0;
 		text-align: center; 
 	}
+	.jumbotron{
+	    height: 410px;
+	}
 }

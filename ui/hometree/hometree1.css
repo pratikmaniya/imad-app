@@ -76,6 +76,7 @@ header li a:hover{
 	display: flex;
 	align-items: center;
 	background-image: url('/ui/hometree/jumbotron.jpg');
+	background-position: center;
 	background-size: cover;
 	height: 410px;
 	z-index: 0;
@@ -292,7 +293,6 @@ footer ul{
 		font-size: 16px;
 		font-weight: 700;
 		position: static;
-		margin-top: 20px;
 		border-bottom: 1px solid #50d050;
 	}
 	

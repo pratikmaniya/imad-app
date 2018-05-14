@@ -296,7 +296,7 @@ footer ul{
 		border-bottom: 1px solid #50d050;
 	}
 	.dropbtn:active{
-	    border: none;
+	    outline: none;
 	}
 	header li:last-child{
 		border-bottom: 1px solid #50d050;
